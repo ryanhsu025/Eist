@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.in.eist.HelloFakeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-31T15:26:30" hostname="JunguoXu" time="0.013">
+  <properties/>
+  <testcase name="shouldPrintHelloCorrectly()" classname="de.tum.in.eist.HelloFakeTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

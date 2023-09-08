@@ -1,0 +1,40 @@
+plugins{
+    id 'java'
+}
+java {
+    sourceCompatibility = 17
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'net.datafaker:datafaker:2.0.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+}
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+    test {
+        java {
+            srcDirs = ['test']
+        }
+    }
+}
+tasks.register('first') {
+    doLast {
+        println 'I am the first task!'
+    }
+}
+tasks.register('second') {
+    dependsOn tasks.first
+    doLast {
+        println 'I am the second task!'
+    }
+}
+test{
+    useJUnitPlatform()
+}

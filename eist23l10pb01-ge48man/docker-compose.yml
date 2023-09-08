@@ -1,0 +1,17 @@
+version: '2'
+services:
+  db:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./webapp/postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    networks:
+      - eist
+
+networks:
+  eist:
+    driver: "bridge"
