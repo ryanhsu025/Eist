@@ -1,0 +1,8 @@
+'-verbose'
+'-g'
+'-d'
+'/eist23l08p02-exercise'
+'de/tum/in/ase/eist/Main.java'
+'de/tum/in/ase/eist/Room.java'
+'de/tum/in/ase/eist/SeminarRoom.java'
+'de/tum/in/ase/eist/Student.java'
