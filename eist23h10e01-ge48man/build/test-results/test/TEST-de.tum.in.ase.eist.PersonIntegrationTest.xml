@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.in.ase.eist.PersonIntegrationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-07-17T13:43:28" hostname="JunguoXu" time="1.942">
+  <properties/>
+  <testcase name="testAddThreeParents()" classname="de.tum.in.ase.eist.PersonIntegrationTest" time="0.817"/>
+  <testcase name="testDeletePerson()" classname="de.tum.in.ase.eist.PersonIntegrationTest" time="0.413"/>
+  <testcase name="testAddParent()" classname="de.tum.in.ase.eist.PersonIntegrationTest" time="0.368"/>
+  <testcase name="testAddPerson()" classname="de.tum.in.ase.eist.PersonIntegrationTest" time="0.343"/>
+  <system-out><![CDATA[15:43:25.251 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:43:25.261 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:43:25.284 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [de.tum.in.ase.eist.PersonIntegrationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:43:25.292 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [de.tum.in.ase.eist.PersonIntegrationTest], using SpringBootContextLoader
+15:43:25.295 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [de.tum.in.ase.eist.PersonIntegrationTest]: class path resource [de/tum/in/ase/eist/PersonIntegrationTest-context.xml] does not exist
+15:43:25.296 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [de.tum.in.ase.eist.PersonIntegrationTest]: class path resource [de/tum/in/ase/eist/PersonIntegrationTestContext.groovy] does not exist
+15:43:25.296 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [de.tum.in.ase.eist.PersonIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:43:25.296 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [de.tum.in.ase.eist.PersonIntegrationTest]: PersonIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:43:25.343 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [de.tum.in.ase.eist.PersonIntegrationTest]
+15:43:25.381 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/junguo/informatik/Java/Eist/eist23h10e01-ge48man/build/classes/java/main/de/tum/in/ase/eist/Application.class]
+15:43:25.383 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration de.tum.in.ase.eist.Application for test class de.tum.in.ase.eist.PersonIntegrationTest
+15:43:25.439 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [de.tum.in.ase.eist.PersonIntegrationTest]: using defaults.
+15:43:25.440 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:43:25.448 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@186978a6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2e029d61, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@482d776b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4052274f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@132ddbab, org.springframework.test.context.support.DirtiesContextTestExecutionListener@297ea53a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@acb0951, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bf22f18, org.springframework.test.context.event.EventPublishingTestExecutionListener@267f474e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7a7471ce, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@28276e50, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@62e70ea3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3efe7086, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@675d8c96, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@741b3bc3]
+15:43:25.449 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@569bf9eb testClass = PersonIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@61526469 testClass = PersonIntegrationTest, locations = '{}', classes = '{class de.tum.in.ase.eist.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@34158c08, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@12bfc7f3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@19b93fa8, [ImportsContextCustomizer@274872f8 key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@525575, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@78383390, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2c1156a7, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@5f683daf], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false]], class annotated with @DirtiesContext [true] with mode [BEFORE_EACH_TEST_METHOD].
+15:43:25.539 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@569bf9eb testClass = PersonIntegrationTest, testInstance = de.tum.in.ase.eist.PersonIntegrationTest@2ba45490, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@61526469 testClass = PersonIntegrationTest, locations = '{}', classes = '{class de.tum.in.ase.eist.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@34158c08, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@12bfc7f3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@19b93fa8, [ImportsContextCustomizer@274872f8 key = [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@525575, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@78383390, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2c1156a7, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@5f683daf], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> false, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::             (v3.0.0-M3)
+
+2023-07-17T15:43:25.734+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : Starting PersonIntegrationTest using Java 17.0.7 on JunguoXu with PID 74705 (started by junguo in /home/junguo/informatik/Java/Eist/eist23h10e01-ge48man)
+2023-07-17T15:43:25.735+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T15:43:26.109+02:00  INFO 74705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T15:43:26.146+02:00  INFO 74705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2023-07-17T15:43:26.206+02:00  INFO 74705 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-07-17T15:43:26.472+02:00  INFO 74705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T15:43:26.479+02:00  INFO 74705 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T15:43:26.479+02:00  INFO 74705 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/10.0.21]
+2023-07-17T15:43:26.539+02:00  INFO 74705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T15:43:26.540+02:00  INFO 74705 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 794 ms
+2023-07-17T15:43:26.580+02:00  INFO 74705 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:b520272b-cc93-40e2-a8a7-ec3f0dc3dbef;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-07-17T15:43:26.813+02:00  INFO 74705 --- [    Test worker] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-17T15:43:26.901+02:00  INFO 74705 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-17T15:43:27.145+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-07-17T15:43:27.147+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+Running Changeset: liquibase/changelog/initial.xml::1::timor-morrien
+2023-07-17T15:43:27.214+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Table person created
+2023-07-17T15:43:27.214+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : ChangeSet liquibase/changelog/initial.xml::1::timor-morrien ran successfully in 5ms
+Running Changeset: liquibase/changelog/2022-06-01.xml::2::timor-morrien
+2023-07-17T15:43:27.220+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Table person_parent_child created
+2023-07-17T15:43:27.225+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to person_parent_child (parent_id)
+2023-07-17T15:43:27.227+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to person_parent_child (child_id)
+2023-07-17T15:43:27.229+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Primary key added to person_parent_child (parent_id,child_id)
+2023-07-17T15:43:27.230+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : ChangeSet liquibase/changelog/2022-06-01.xml::2::timor-morrien ran successfully in 12ms
+2023-07-17T15:43:27.232+02:00  INFO 74705 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+2023-07-17T15:43:27.301+02:00  INFO 74705 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T15:43:27.329+02:00  INFO 74705 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-07-17T15:43:27.417+02:00  INFO 74705 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-17T15:43:27.482+02:00  INFO 74705 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-07-17T15:43:27.792+02:00  INFO 74705 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T15:43:27.797+02:00  INFO 74705 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T15:43:28.208+02:00  WARN 74705 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-07-17T15:43:28.259+02:00  INFO 74705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2023-07-17T15:43:28.259+02:00  INFO 74705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17T15:43:28.260+02:00  INFO 74705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-07-17T15:43:28.294+02:00  INFO 74705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 34659 (http) with context path ''
+2023-07-17T15:43:28.302+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : Started PersonIntegrationTest in 2.75 seconds (process running for 3.503)
+2023-07-17T15:43:28.315+02:00  INFO 74705 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::             (v3.0.0-M3)
+
+2023-07-17T15:43:28.332+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : Starting PersonIntegrationTest using Java 17.0.7 on JunguoXu with PID 74705 (started by junguo in /home/junguo/informatik/Java/Eist/eist23h10e01-ge48man)
+2023-07-17T15:43:28.332+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T15:43:28.424+02:00  INFO 74705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T15:43:28.428+02:00  INFO 74705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-07-17T15:43:28.449+02:00  INFO 74705 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-07-17T15:43:28.497+02:00  INFO 74705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T15:43:28.498+02:00  INFO 74705 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T15:43:28.498+02:00  INFO 74705 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/10.0.21]
+2023-07-17T15:43:28.513+02:00  INFO 74705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T15:43:28.513+02:00  INFO 74705 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 179 ms
+2023-07-17T15:43:28.526+02:00  INFO 74705 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:e9a05722-f025-45d3-a6cc-086de04a74c1;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-07-17T15:43:28.530+02:00  INFO 74705 --- [    Test worker] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-17T15:43:28.540+02:00  INFO 74705 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-17T15:43:28.578+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-07-17T15:43:28.580+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+Running Changeset: liquibase/changelog/initial.xml::1::timor-morrien
+2023-07-17T15:43:28.590+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Table person created
+2023-07-17T15:43:28.590+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : ChangeSet liquibase/changelog/initial.xml::1::timor-morrien ran successfully in 2ms
+Running Changeset: liquibase/changelog/2022-06-01.xml::2::timor-morrien
+2023-07-17T15:43:28.594+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Table person_parent_child created
+2023-07-17T15:43:28.596+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to person_parent_child (parent_id)
+2023-07-17T15:43:28.597+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to person_parent_child (child_id)
+2023-07-17T15:43:28.599+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Primary key added to person_parent_child (parent_id,child_id)
+2023-07-17T15:43:28.599+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : ChangeSet liquibase/changelog/2022-06-01.xml::2::timor-morrien ran successfully in 7ms
+2023-07-17T15:43:28.601+02:00  INFO 74705 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+2023-07-17T15:43:28.614+02:00  INFO 74705 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T15:43:28.616+02:00  INFO 74705 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-07-17T15:43:28.631+02:00  INFO 74705 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T15:43:28.631+02:00  INFO 74705 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T15:43:28.734+02:00  WARN 74705 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-07-17T15:43:28.756+02:00  INFO 74705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2023-07-17T15:43:28.756+02:00  INFO 74705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17T15:43:28.757+02:00  INFO 74705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-07-17T15:43:28.762+02:00  INFO 74705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 44639 (http) with context path ''
+2023-07-17T15:43:28.765+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : Started PersonIntegrationTest in 0.447 seconds (process running for 3.966)
+2023-07-17T15:43:29.128+02:00  INFO 74705 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::             (v3.0.0-M3)
+
+2023-07-17T15:43:29.146+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : Starting PersonIntegrationTest using Java 17.0.7 on JunguoXu with PID 74705 (started by junguo in /home/junguo/informatik/Java/Eist/eist23h10e01-ge48man)
+2023-07-17T15:43:29.147+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T15:43:29.233+02:00  INFO 74705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T15:43:29.236+02:00  INFO 74705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-07-17T15:43:29.252+02:00  INFO 74705 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-07-17T15:43:29.283+02:00  INFO 74705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T15:43:29.284+02:00  INFO 74705 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T15:43:29.284+02:00  INFO 74705 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/10.0.21]
+2023-07-17T15:43:29.292+02:00  INFO 74705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T15:43:29.293+02:00  INFO 74705 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 145 ms
+2023-07-17T15:43:29.302+02:00  INFO 74705 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:f7e9f211-2d3e-477c-bf05-58910e0c41ee;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-07-17T15:43:29.305+02:00  INFO 74705 --- [    Test worker] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-17T15:43:29.313+02:00  INFO 74705 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-17T15:43:29.342+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-07-17T15:43:29.343+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+Running Changeset: liquibase/changelog/initial.xml::1::timor-morrien
+2023-07-17T15:43:29.354+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Table person created
+2023-07-17T15:43:29.354+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : ChangeSet liquibase/changelog/initial.xml::1::timor-morrien ran successfully in 2ms
+Running Changeset: liquibase/changelog/2022-06-01.xml::2::timor-morrien
+2023-07-17T15:43:29.358+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Table person_parent_child created
+2023-07-17T15:43:29.360+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to person_parent_child (parent_id)
+2023-07-17T15:43:29.362+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to person_parent_child (child_id)
+2023-07-17T15:43:29.363+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Primary key added to person_parent_child (parent_id,child_id)
+2023-07-17T15:43:29.363+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : ChangeSet liquibase/changelog/2022-06-01.xml::2::timor-morrien ran successfully in 7ms
+2023-07-17T15:43:29.366+02:00  INFO 74705 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+2023-07-17T15:43:29.386+02:00  INFO 74705 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T15:43:29.388+02:00  INFO 74705 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-07-17T15:43:29.406+02:00  INFO 74705 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T15:43:29.406+02:00  INFO 74705 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T15:43:29.491+02:00  WARN 74705 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-07-17T15:43:29.509+02:00  INFO 74705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2023-07-17T15:43:29.509+02:00  INFO 74705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17T15:43:29.510+02:00  INFO 74705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-07-17T15:43:29.515+02:00  INFO 74705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 34507 (http) with context path ''
+2023-07-17T15:43:29.517+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : Started PersonIntegrationTest in 0.387 seconds (process running for 4.718)
+2023-07-17T15:43:29.542+02:00  INFO 74705 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::             (v3.0.0-M3)
+
+2023-07-17T15:43:29.556+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : Starting PersonIntegrationTest using Java 17.0.7 on JunguoXu with PID 74705 (started by junguo in /home/junguo/informatik/Java/Eist/eist23h10e01-ge48man)
+2023-07-17T15:43:29.556+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T15:43:29.626+02:00  INFO 74705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T15:43:29.628+02:00  INFO 74705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-07-17T15:43:29.643+02:00  INFO 74705 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-07-17T15:43:29.669+02:00  INFO 74705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T15:43:29.669+02:00  INFO 74705 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T15:43:29.669+02:00  INFO 74705 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/10.0.21]
+2023-07-17T15:43:29.676+02:00  INFO 74705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T15:43:29.676+02:00  INFO 74705 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 119 ms
+2023-07-17T15:43:29.684+02:00  INFO 74705 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:740f3179-6205-4745-9d3f-e870d2fb405a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-07-17T15:43:29.687+02:00  INFO 74705 --- [    Test worker] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-17T15:43:29.694+02:00  INFO 74705 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-17T15:43:29.720+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-07-17T15:43:29.722+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+Running Changeset: liquibase/changelog/initial.xml::1::timor-morrien
+2023-07-17T15:43:29.730+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Table person created
+2023-07-17T15:43:29.731+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : ChangeSet liquibase/changelog/initial.xml::1::timor-morrien ran successfully in 2ms
+Running Changeset: liquibase/changelog/2022-06-01.xml::2::timor-morrien
+2023-07-17T15:43:29.737+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Table person_parent_child created
+2023-07-17T15:43:29.739+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to person_parent_child (parent_id)
+2023-07-17T15:43:29.740+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to person_parent_child (child_id)
+2023-07-17T15:43:29.742+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Primary key added to person_parent_child (parent_id,child_id)
+2023-07-17T15:43:29.742+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : ChangeSet liquibase/changelog/2022-06-01.xml::2::timor-morrien ran successfully in 7ms
+2023-07-17T15:43:29.744+02:00  INFO 74705 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+2023-07-17T15:43:29.757+02:00  INFO 74705 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T15:43:29.760+02:00  INFO 74705 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-07-17T15:43:29.773+02:00  INFO 74705 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T15:43:29.774+02:00  INFO 74705 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T15:43:29.856+02:00  WARN 74705 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-07-17T15:43:29.873+02:00  INFO 74705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2023-07-17T15:43:29.873+02:00  INFO 74705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17T15:43:29.873+02:00  INFO 74705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-07-17T15:43:29.879+02:00  INFO 74705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 37045 (http) with context path ''
+2023-07-17T15:43:29.880+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : Started PersonIntegrationTest in 0.337 seconds (process running for 5.082)
+2023-07-17T15:43:29.909+02:00  INFO 74705 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::             (v3.0.0-M3)
+
+2023-07-17T15:43:29.923+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : Starting PersonIntegrationTest using Java 17.0.7 on JunguoXu with PID 74705 (started by junguo in /home/junguo/informatik/Java/Eist/eist23h10e01-ge48man)
+2023-07-17T15:43:29.923+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T15:43:29.993+02:00  INFO 74705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T15:43:29.995+02:00  INFO 74705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2023-07-17T15:43:30.011+02:00  INFO 74705 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-07-17T15:43:30.036+02:00  INFO 74705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T15:43:30.036+02:00  INFO 74705 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T15:43:30.037+02:00  INFO 74705 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/10.0.21]
+2023-07-17T15:43:30.043+02:00  INFO 74705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T15:43:30.043+02:00  INFO 74705 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 119 ms
+2023-07-17T15:43:30.051+02:00  INFO 74705 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:09bc519e-dffe-458f-9bb7-cdf47dbf4de3;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-07-17T15:43:30.053+02:00  INFO 74705 --- [    Test worker] liquibase.database                       : Set default schema name to PUBLIC
+2023-07-17T15:43:30.060+02:00  INFO 74705 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2023-07-17T15:43:30.084+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-07-17T15:43:30.085+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+Running Changeset: liquibase/changelog/initial.xml::1::timor-morrien
+2023-07-17T15:43:30.093+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Table person created
+2023-07-17T15:43:30.093+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : ChangeSet liquibase/changelog/initial.xml::1::timor-morrien ran successfully in 2ms
+Running Changeset: liquibase/changelog/2022-06-01.xml::2::timor-morrien
+2023-07-17T15:43:30.096+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Table person_parent_child created
+2023-07-17T15:43:30.097+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to person_parent_child (parent_id)
+2023-07-17T15:43:30.099+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Foreign key constraint added to person_parent_child (child_id)
+2023-07-17T15:43:30.100+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : Primary key added to person_parent_child (parent_id,child_id)
+2023-07-17T15:43:30.101+02:00  INFO 74705 --- [    Test worker] liquibase.changelog                      : ChangeSet liquibase/changelog/2022-06-01.xml::2::timor-morrien ran successfully in 6ms
+2023-07-17T15:43:30.104+02:00  INFO 74705 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+2023-07-17T15:43:30.119+02:00  INFO 74705 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T15:43:30.122+02:00  INFO 74705 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-07-17T15:43:30.140+02:00  INFO 74705 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T15:43:30.140+02:00  INFO 74705 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T15:43:30.208+02:00  WARN 74705 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-07-17T15:43:30.224+02:00  INFO 74705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2023-07-17T15:43:30.224+02:00  INFO 74705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17T15:43:30.224+02:00  INFO 74705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-07-17T15:43:30.230+02:00  INFO 74705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 43579 (http) with context path ''
+2023-07-17T15:43:30.231+02:00  INFO 74705 --- [    Test worker] d.tum.in.ase.eist.PersonIntegrationTest  : Started PersonIntegrationTest in 0.321 seconds (process running for 5.433)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
