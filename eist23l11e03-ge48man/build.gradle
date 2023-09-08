@@ -1,0 +1,33 @@
+plugins {
+    id 'com.github.spotbugs' version '5.0.6'
+    id 'java'
+}
+
+version = '1.0.0'
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+    test {
+        java {
+            srcDirs = []
+        }
+    }
+}
+
+spotbugsMain {
+    reports {
+        xml {
+            required = true
+            outputLocation = file('build/spotbugs-report.xml')
+        }
+    }
+}
